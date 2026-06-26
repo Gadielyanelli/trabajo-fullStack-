@@ -4,14 +4,17 @@ import RenderCar from './componente/renderCarr'
 import { estCarrito } from './hooks/carrito'
 import './App.css'
 import './index.css'
+//import botonDeCompra from './componente/botoDeCompra'
 
 function App() {
   const { rende, cargando } = Api()
   const { carrito, agregarAlCarrito } = estCarrito()
-
+  
   return (
     <>
-      <h1 className='titulo'>Productos:</h1>
+      {carrito.length > 0 && <button className='carrito'>carrito ({ carrito.length})</button>}
+
+      <h1 className='titulo'>Smartphones Gardel</h1>
 
       <section className='nombres'>
         {
@@ -31,4 +34,4 @@ function App() {
   )
 }
 
-export default App
+export default App 
