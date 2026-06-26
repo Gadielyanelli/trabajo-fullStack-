@@ -5,16 +5,17 @@ import { estCarrito } from './hooks/carrito'
 import './App.css'
 import './index.css'
 //import botonDeCompra from './componente/botoDeCompra'
-
+   //importamos todo lo que vamos a usar en app
 function App() {
   const { rende, cargando } = Api()
   const { carrito, agregarAlCarrito } = estCarrito()
   
   return (
     <>
-      {carrito.length > 0 && <button className='carrito'>carrito ({ carrito.length})</button>}
+      
 
       <h1 className='titulo'>Smartphones Gardel</h1>
+      {carrito.length > 0 && <button className='carrito'>ver carrito ({ carrito.length})</button>}
 
       <section className='nombres'>
         {
@@ -25,13 +26,12 @@ function App() {
         }
       </section>
 
-      <h2 className='titulo'>Carrito</h2>
 
-      {carrito.map(CARR => ( <RenderCar key={CARR.id} FEV={CARR}
-        />
-      ))}
+  
+      
     </>
   )
 }
 
 export default App 
+///{carrito.map(CARR => ( <RenderCar key={CARR.id} FEV={CARR}

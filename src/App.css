@@ -1,182 +1,157 @@
 body {
-    background: #f3f4f6;
+  background: #ececf0;
 }
+
 .titulo {
-    width: 100%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
-    padding: 25px 0;
-    margin: 0 0 30px 0;
-
-    text-align: center;
-
-    background: linear-gradient(90deg, #111111, #2b124c, #6b21a8);
-
-    color: white;
-
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
-    border-bottom: 4px solid #8b5cf6;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background: linear-gradient(90deg, #111111, #2b124c, #6b21a8);
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid #8b5cf6;
 }
 
 h2.titulo {
-    font-size: 32px;
-    margin-top: 40px;
+  font-size: 32px;
+  margin-top: 40px;
 }
 
 /* Título principal */
 h1 {
-    text-align: center;
-    color: #1a1a1a;
-    margin: 30px 0;
-    font-size: 42px;
-    font-weight: 700;
+  text-align: center;
+  color: #1a1a1a;
+  margin: 30px 0;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 20px;
-    color: #1a1a1a;
-    text-align: center;
+  font-size: 20px;
+  color: #1a1a1a;
+  text-align: center;
 }
 
 h3 {
-    color: #6b21a8;
-    font-size: 24px;
-    font-weight: bold;
+  color: #6b21a8;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Contenedor de productos */
 .nombres {
-    width: 100%;
-    padding: 30px;
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
 }
 
 /* Tarjetas */
 .renderizado {
-    background: white;
-    border-radius: 18px;
-    padding: 25px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .renderizado:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Imagen */
-.renderizado img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-
-    margin-bottom: 15px;
-}
-.carrito {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    
-    transition: 0.6s;
-    width: 65px;
-    height: 65px;
-    
-    border-radius: 50%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: #6b21a8;
-    color: white;
-    
-    font-size: 20px;
-    font-weight: bold;
-    
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    
-}
-
-.carrito:hover {
-    
-    transform: scale(1.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 /* Precio */
 .precio {
-    font-size: 28px;
-    color: #6b21a8;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 28px;
+  color: #6b21a8;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 /* Marca */
 .marca {
-    color: #666;
-    margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6b21a8;
+  background: #f3e8ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
 }
+
 
 /* Botón */
 button {
-    margin-top: auto;
+  margin-top: auto;
 
-    width: 100%;
-    padding: 14px;
+  width: 100%;
+  padding: 14px;
 
-    border: none;
-    border-radius: 10px;
+  border: none;
+  border-radius: 10px;
 
-    background: #6b21a8;
-    color: white;
+  background: #6b21a8;
+  color: white;
 
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 button:hover {
-    background: #4c1d95;
+  background: #4c1d95;
+}
+
+button:active {
+  transform: scale(0.60);
 }
 
 /* Favoritos */
 .favoritos {
-    padding: 30px;
+  padding: 30px;
 }
 
 .favoritos h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    .nombres {
-        padding: 15px;
-        gap: 15px;
-    }
+  .nombres {
+    padding: 15px;
+    gap: 15px;
+  }
 
-    .renderizado img {
-        width: 150px;
-        height: 150px;
-    }
+  .renderizado img {
+    width: 150px;
+    height: 150px;
+  }
 }
