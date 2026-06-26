@@ -1,0 +1,153 @@
+body {
+    background: #f3f4f6;
+}
+.titulo {
+    width: 100%;
+
+    padding: 25px 0;
+    margin: 0 0 30px 0;
+
+    text-align: center;
+
+    background: linear-gradient(90deg, #111111, #2b124c, #6b21a8);
+
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    border-bottom: 4px solid #8b5cf6;
+}
+
+h2.titulo {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin: 30px 0;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+h3 {
+    color: #6b21a8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Contenedor de productos */
+.nombres {
+    width: 100%;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas */
+.renderizado {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.renderizado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Imagen */
+.renderizado img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+/* Precio */
+.precio {
+    font-size: 28px;
+    color: #6b21a8;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Marca */
+.marca {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botón */
+button {
+    margin-top: auto;
+
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6b21a8;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4c1d95;
+}
+
+/* Favoritos */
+.favoritos {
+    padding: 30px;
+}
+
+.favoritos h1 {
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .nombres {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .renderizado img {
+        width: 150px;
+        height: 150px;
+    }
+}
